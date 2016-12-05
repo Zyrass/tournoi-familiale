@@ -26,7 +26,7 @@
                             <span class="text-primary">Le dépassement de soit</span>, <span class="text-primary">l'esprit d'équipe</span>, <span class="text-primary">la combativitée</span>,<br />
                             <span class="text-primary">le respect</span> et bien entendu <strong><span class="text-primary">des sports</span> qui ne sont pas enseigné à l'école".</strong><br />
                             <hr /> 
-                            <q class="text-danger">Je finirais par simplement, profitez des enfants, nous n'avons qu'une seule vie</q></p>
+                            <q class="text-danger">Je finirais par simplement, profitez des enfants, nous avons qu'une seule vie</q></p>
                         </div>
                     </section>
                 </div>

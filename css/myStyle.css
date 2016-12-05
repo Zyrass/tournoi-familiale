@@ -28,6 +28,8 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
   border-right: 1px solid #999;
   border-bottom: 1px solid #999;
   word-spacing: 5px; }
+.slider .information.disabled {
+  display: none; }
 .slider #icone {
   background-color: #f7f7f9;
   margin-top: 0px;
@@ -40,11 +42,16 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
   justify-content: center;
   align-items: center;
   border-top: #999; }
-  .slider #icone i.fa {
-    font-size: 2em; }
-  .slider #icone i.fa:before {
-    content: "-  \f070  - Cacher le contenu...";
-    color: #d9534f; }
+  .slider #icone button {
+    width: 90%;
+    height: auto;
+    border: none;
+    padding: 10px 0;
+    background-color: #eee;
+    opacity: .2; }
+    .slider #icone button i {
+      color: #000;
+      font-size: 2em; }
 .slider #icone:hover {
   background-color: #eee;
   border-radius: 0 0 25px 25px;
@@ -53,12 +60,9 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
   justify-content: center;
   align-items: center;
   border-top: #999; }
-  .slider #icone:hover i.fa:before {
-    content: ""; }
-  .slider #icone:hover i.fa:after {
-    color: #0275d8;
-    transition: color .5s linear;
-    content: "-  \f06e  - Afficher le contenu..."; }
+  .slider #icone:hover button {
+    opacity: 1;
+    transition: opacity .5s linear; }
 
 .description:nth-child(1) {
   margin-top: 40px; }

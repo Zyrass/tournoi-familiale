@@ -40,6 +40,9 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
         border-bottom: 1px solid $couleurOmbre;
         word-spacing: 5px;
     }
+    .information.disabled {
+        display: none;
+    }
 
     #icone {
         background-color: #f7f7f9;
@@ -52,13 +55,18 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-top: $couleurOmbre; 
-        i.fa {
-            font-size: 2em;
-        }
-        i.fa:before {
-            content: "-  \f070  - Cacher le contenu...";
-            color: $danger;
+        border-top: $couleurOmbre;
+        button {
+            width: 90%;
+            height: auto;
+            border: none;
+            padding: 10px 0;
+            background-color: $couleurOmbreHover;
+            opacity: .2;
+            i {
+                color: $black;
+                font-size: 2em;
+            }
         }
     }
 
@@ -70,13 +78,9 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
         justify-content: center;
         align-items: center;
         border-top: $couleurOmbre;
-        i.fa:before {
-            content: "";
-        }
-        i.fa:after {
-            color: $primary;
-            transition: color .5s linear;
-            content: "-  \f06e  - Afficher le contenu...";
+        button {
+            opacity: 1;
+            transition: opacity .5s linear;
         }
     }
 }
