@@ -55,6 +55,12 @@
                     <li class="nav-item">
                         <a href="date.php" class="nav-link item-dates">Dates des prochaines confrontations</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="login.php" class="nav-link item-login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="deconexion.php" class="nav-link">Déconnexion</a>
+                    </li>
 
                 </ul>
             </nav>

@@ -3,11 +3,11 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 pl-0">
+            <div class="col-sm-12">
                 <div class="description">
                     <section id="plaisir">
                         <div class="title">
-                            <h4 class="h2">Plaisir</h4>
+                            <h4 class="h3">Plaisir</h4>
                         </div>
                         <div class="image">
                             <img src="http://www.ravepubs.com/wp-content/uploads/2015/08/park.jpg" alt="" class="img-thumbnail">
@@ -18,11 +18,11 @@
                     </section>
                 </div>
             </div> <!-- Fin col-sm-4 (1)-->
-            <div class="col-sm-12 pl-0">
+            <div class="col-sm-12">
                 <div class="description">
                     <section id="amusement">
                         <div class="title">
-                            <h4 class="h2">Amusement</h4>
+                            <h4 class="h3">Amusement</h4>
                         </div>
                         <div class="image">
                             <img src="http://www.atlantico.fr/sites/atlantico.fr/files/styles/une/public/images/2016/02/plaisir.jpg" alt="" class="img-thumbnail">
@@ -37,7 +37,7 @@
                 <div class="description">
                     <section id="famille">
                         <div class="title">
-                            <h4 class="h2">Famille</h4>
+                            <h4 class="h3">Famille</h4>
                         </div>
                         <div class="image">
                             <img src="https://d1syos9fsbz8ei.cloudfront.net/Images2/blog/v2/famille_jassurmalin.jpg" alt="" class="img-thumbnail">
