@@ -5,6 +5,9 @@
 $couleurOmbre: #999;
 $couleurOmbreHover: #eee;
 $blanc: #fff;
+$black: #000;
+$primary: #0275d8;
+$danger: #d9534f;
 
 /*****************************************************************************
  ******************************************** GLOBAL
@@ -17,37 +20,153 @@ body {
     background-image: linear-gradient(#f7f7f9, #999);
     
 }
-.description section {
-    margin: 20px 0;
+header {
+    border-bottom: 1px solid $couleurOmbre;
 }
 
-#plaisir {
+h1, h2, h3, h4, h5, h6, p:first-letter {
+    font-family: 'Aref Ruqaa', serif;
+}
+/*****************************************************************************
+ ******************************************** SLIDER
+ ****************************************************************************/
+.slider {
+    .information {
+        background-color: #f7f7f9;
+        text-align:center;
+        padding: 20px 100px;
+        border-left: 1px solid $couleurOmbre;
+        border-right: 1px solid $couleurOmbre;
+        border-bottom: 1px solid $couleurOmbre;
+        word-spacing: 5px;
+    }
+
+    #icone {
+        background-color: #f7f7f9;
+        margin-top: 0px;
+        padding: 10px 0;
+        border-left: 1px solid $couleurOmbre;
+        border-right: 1px solid $couleurOmbre;
+        border-bottom: 1px solid $couleurOmbre;
+        border-radius: 0 0 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: $couleurOmbre; 
+        i.fa {
+            font-size: 2em;
+        }
+        i.fa:before {
+            content: "-  \f070  - Cacher le contenu...";
+            color: $danger;
+        }
+    }
+
+    #icone:hover {
+        background-color: $couleurOmbreHover;
+        border-radius: 0 0 25px 25px;
+        transition: all .5s linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: $couleurOmbre;
+        i.fa:before {
+            content: "";
+        }
+        i.fa:after {
+            color: $primary;
+            transition: color .5s linear;
+            content: "-  \f06e  - Afficher le contenu...";
+        }
+    }
+}
+    
+
+
+
+.description:nth-child(1) {
+    margin-top: 40px;
+}
+
+.description section {
+    margin: 20px 40px;
+}
+
+#plaisir, #statistique, #famille {
     padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 2px solid $blanc;
-    box-shadow: 0 0 30px $couleurOmbre;
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
     .title h4 {
         font-size: 2em;        
         text-shadow: 2px 2px 0 $blanc;
     }
-    img {
-        filter: sepia(100%);
+    .image {
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 20px $black;
     }
+    .image img {
+        filter: sepia(100%);
+        z-index: 1;
+    }
+    .image .scotch1, 
+    .image .scotch2,
+    .image .scotch3,
+    .image .scotch4 {
+        position: absolute;
+        width: 50px;
+        height: 120px;
+        background-color: $blanc;
+        opacity: .8;
+        box-shadow: 0 0 10px $black;
+    }
+    .image .scotch1 {
+        top: -35px;
+        left: 0px;
+        transform: rotate(45deg);
+    }
+    .image .scotch2 {
+        top: -35px;
+        right: 0px;
+        transform: rotate(-45deg);
+    }
+    .image .scotch3 {
+        bottom: -30px;
+        left: 0px;
+        transform: rotate(-45deg);
+    }
+    .image .scotch4 {
+        bottom: -30px;
+        right: 0px;
+        transform: rotate(45deg);
+    }
+
     .paragraphe p:first-letter {
-        
+        font-size: 4em;
+        float: left;
+        padding: 0 10px 0 0;
+        text-shadow: 0 0 10px $blanc;
+    }
+    .paragraphe p {
+        letter-spacing: 2px;
+        word-spacing: 2px;
     }
 }
 
-#plaisir:hover {
+#plaisir:hover, #statistique:hover, #famille:hover {
     padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 2px solid $blanc;
-    box-shadow: 0 0 30px $couleurOmbreHover;
     transition: box-shadow .5s linear;
+    cursor: pointer;
     .title h4 {
         font-size: 3em;
         transform: rotate(-90deg);
@@ -64,9 +183,6 @@ body {
         transition: filter .5s linear;
     }
 }
-
-
-
 
 
 
