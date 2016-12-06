@@ -9,7 +9,7 @@
                     </div>
                     <div id="icone">
                         <button type="button">
-                            <i class="fa fa-eye" aria-hidden="true"> <span>Cliquez ici...</span></i>
+                            <i class="fa fa-eye" aria-hidden="true"> <span>Oh les curieux, allez cliquez vite :)</span></i>
                         </button>    
                     </div>
                 </div> <!-- Fin slider -->

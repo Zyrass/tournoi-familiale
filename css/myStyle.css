@@ -13,56 +13,62 @@ body {
 
 header {
   border-bottom: 1px solid #999; }
+  header #disabledButton {
+    word-spacing: 2px;
+    letter-spacing: 3px; }
 
 h1, h2, h3, h4, h5, h6, p:first-letter {
-  font-family: 'Aref Ruqaa', serif; }
+  font-family: 'Aref Ruqaa', serif;
+  text-align: center; }
 
 /*****************************************************************************
  ******************************************** SLIDER
  ****************************************************************************/
-.slider .information {
-  background-color: #f7f7f9;
-  text-align: center;
-  padding: 20px 100px;
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  border-bottom: 1px solid #999;
-  word-spacing: 5px; }
-.slider .information.disabled {
+.slider {
   display: none; }
-.slider #icone {
-  background-color: #f7f7f9;
-  margin-top: 0px;
-  padding: 10px 0;
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  border-bottom: 1px solid #999;
-  border-radius: 0 0 10px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: #999; }
-  .slider #icone button {
-    width: 90%;
-    height: auto;
-    border: none;
+  .slider .information {
+    background-color: #f7f7f9;
+    text-align: center;
+    padding: 20px 100px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    word-spacing: 5px; }
+  .slider .information.disabled {
+    display: none; }
+  .slider #icone {
+    background-color: #f7f7f9;
+    margin-top: 0px;
     padding: 10px 0;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: #999; }
+    .slider #icone button {
+      width: 90%;
+      height: auto;
+      border: none;
+      padding: 10px 0;
+      background-color: #eee;
+      opacity: .2; }
+      .slider #icone button i {
+        color: #000;
+        font-size: 2em; }
+  .slider #icone:hover {
     background-color: #eee;
-    opacity: .2; }
-    .slider #icone button i {
-      color: #000;
-      font-size: 2em; }
-.slider #icone:hover {
-  background-color: #eee;
-  border-radius: 0 0 25px 25px;
-  transition: all .5s linear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: #999; }
-  .slider #icone:hover button {
-    opacity: 1;
-    transition: opacity .5s linear; }
+    border-radius: 0 0 25px 25px;
+    transition: all .5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: #999; }
+    .slider #icone:hover button {
+      opacity: 1;
+      transition: opacity .5s linear; }
 
 .description:nth-child(1) {
   margin-top: 40px; }

@@ -4,6 +4,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
+                <h2 class="display-1">Présentation</h2>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
                 <div class="description">
                     <section id="plaisir">
                         <div class="title">

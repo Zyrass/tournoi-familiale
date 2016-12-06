@@ -22,15 +22,21 @@ body {
 }
 header {
     border-bottom: 1px solid $couleurOmbre;
+    #disabledButton {
+        word-spacing: 2px;
+        letter-spacing: 3px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6, p:first-letter {
     font-family: 'Aref Ruqaa', serif;
+    text-align: center;
 }
 /*****************************************************************************
  ******************************************** SLIDER
  ****************************************************************************/
 .slider {
+    display: none;
     .information {
         background-color: #f7f7f9;
         text-align:center;

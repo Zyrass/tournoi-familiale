@@ -1,20 +1,38 @@
 $(document).ready(function(){
-
-
+    
+    // Activer ou désactiver l'affichage du menu rapide
+    var ask = 0;
+    $('#disabledButton').click(function() {
+        
+        if ( ask == 0 ) {
+            $('.slider').show('slow');
+            $('#disabledButton span')
+                .removeClass("text-success")
+                .addClass("text-danger")
+                .html("<strong>Close</strong>");
+            ask = 1;
+        } else {
+            $('.slider').hide('slow');
+            $('#disabledButton span')
+                .removeClass("text-danger")
+                .addClass("text-success")
+                .html("<strong>Open</strong>");
+            ask = 0;
+        }
+    });
 
 
     // Affichez un rapide descriptif du menu de navigation
-    var ask = 0;
-
+    var ask = true;
     $('.slider #icone button').click(function() {
 
-        if ( ask == 0) {
+        if ( ask == true) {
             $('.slider .information').show('slow');
             $('.slider #icone button i')
                 .addClass('fa fa-eye-slash')
                 .css("color", "red");
             $('.slider #icone button i span').text("Caché le contenu du menu de navigation");
-            ask = 1;
+            ask = false;
         } else {
             $('.slider .information').hide('slow');
             $('.slider #icone button i')
@@ -22,7 +40,7 @@ $(document).ready(function(){
                 .addClass('fa fa-eye')
                 .css("color", "blue");
             $('.slider #icone button i span').text("Ré-afficher le contenu du menu de navigation");
-            ask = 0;
+            ask = true;
         }
     });
 

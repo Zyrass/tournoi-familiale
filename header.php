@@ -30,11 +30,16 @@
                 <ul class="nav navbar ml-3 float-xs-left">
                     <form methode="get" class="form-inline">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Votre recherche ici" style="width:600px;">
+                            <input type="text" class="form-control" placeholder="Votre recherche ici" style="width:500px;">
                             <span class="input-group-addon" id="basic-addon1">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </span>
                         </div>
+                    </form>
+                </ul>
+                <ul class="nav navbar ml-3 float-xs-left">
+                    <form class="form-inline">
+                        <button type="button" id="disabledButton" class="form-control button-disabled"><span class="text-success"><strong>Open</strong></span> this description
                     </form>
                 </ul>
                 <ul class="nav navbar-nav float-xs-right mr-3">
