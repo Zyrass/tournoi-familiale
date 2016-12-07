@@ -1,6 +1,10 @@
 /*****************************************************************************
  ******************************************** Variables
  ****************************************************************************/
+#firstPresentation {
+  height: 100%;
+  width: 50%; }
+
 /*****************************************************************************
  ******************************************** GLOBAL
  ****************************************************************************/
@@ -9,14 +13,19 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  background-image: linear-gradient(#f7f7f9, #999);
-  background-repeat: no-repeat; }
+  background-image: url("../images/bg2.png");
+  background-repeat: repeat; }
 
 header {
   border-bottom: 1px solid #999; }
+  header nav h1 a:hover {
+    text-decoration: none; }
   header #disabledButton {
     word-spacing: 2px;
     letter-spacing: 3px; }
+  header a:hover.nav-link {
+    border-bottom: 3px solid #0275d8;
+    transition: border .5s linear; }
 
 h1, h2, h3, h4, h5, h6, p:first-letter {
   font-family: 'Aref Ruqaa', serif;
@@ -28,7 +37,8 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
 .slider {
   display: none; }
   .slider .information {
-    background-color: #f7f7f9;
+    background-image: url("../images/bg.png");
+    background-repeat: repeat;
     text-align: center;
     padding: 20px 100px;
     border-left: 1px solid #999;
@@ -84,8 +94,7 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
   align-items: center;
   border: 2px solid #fff;
   background-image: url("../images/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
   height: 500px; }
   #plaisir .title h4, #statistique .title h4, #famille .title h4 {
     font-size: 2em;

@@ -26,11 +26,11 @@
 
         <header>
             <nav class="navbar navbar-light bg-faded">
-                <h1 class="navbar-brand mb-0">Tournoi Familiale</h1> <!-- mb-0 === margin-bottom : 0; -->
+                <h1 class="navbar-brand mb-0"><a href="index.php">Tournoi Familiale</a></h1> <!-- mb-0 === margin-bottom : 0; -->
                 <ul class="nav navbar ml-3 float-xs-left">
                     <form methode="get" class="form-inline">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Votre recherche ici" style="width:500px;">
+                            <input type="text" class="form-control" placeholder="Votre recherche ici" style="width:350px;">
                             <span class="input-group-addon" id="basic-addon1">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </span>
@@ -44,25 +44,45 @@
                 </ul>
                 <ul class="nav navbar-nav float-xs-right mr-3">
                     <li class="nav-item">
-                        <a href="presentation.php" class="nav-link item-presentation">Présentation</a>
+                        <a href="presentation.php" class="nav-link item-presentation">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i> Présentation
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="regles.php" class="nav-link item-regles">Règles</a>
+                        <a href="regles.php" class="nav-link item-regles">
+                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Règles
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="participant.php" class="nav-link item-participant">Participants</a>
+                        <a href="participant.php" class="nav-link item-participant">
+                            <i class="fa fa-users" aria-hidden="true"></i> Participants
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="scores.php" class="nav-link item-scores">Scores</a>
+                        <a href="scores.php" class="nav-link item-scores">
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i> Statistiques
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="classement.php" class="nav-link item-classements">Classements</a>
+                        <a href="classement.php" class="nav-link item-classements">
+                            <i class="fa fa-cubes" aria-hidden="true"></i> Classements
+                            
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="date.php" class="nav-link item-dates">Dates des prochaines confrontations</a>
+                        <a href="date.php" class="nav-link item-dates">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> Dates
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="login.php" class="nav-link item-login">Login</a>
+                        <a href="login.php" class="nav-link item-login">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i> Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.php" class="nav-link item-login">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i> Déconnexion
+                        </a>
                     </li>
                 </ul>
             </nav>

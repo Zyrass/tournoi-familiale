@@ -9,6 +9,11 @@ $black: #000;
 $primary: #0275d8;
 $danger: #d9534f;
 
+#firstPresentation {
+    height: 100%;
+    width: 50%;
+}
+
 /*****************************************************************************
  ******************************************** GLOBAL
  ****************************************************************************/
@@ -17,15 +22,22 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    background-image: linear-gradient(#f7f7f9, #999);
-    background-repeat: no-repeat;
+    background-image: url('../images/bg2.png');
+    background-repeat: repeat;
     
 }
 header {
     border-bottom: 1px solid $couleurOmbre;
+    nav h1 a:hover {
+        text-decoration:none;
+    }
     #disabledButton {
         word-spacing: 2px;
         letter-spacing: 3px;
+    }
+    a:hover.nav-link {
+        border-bottom: 3px solid $primary;
+        transition: border .5s linear;
     }
 }
 
@@ -39,7 +51,8 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
 .slider {
     display: none;
     .information {
-        background-color: #f7f7f9;
+        background-image: url('../images/bg.png');
+        background-repeat: repeat;
         text-align:center;
         padding: 20px 100px;
         border-left: 1px solid $couleurOmbre;
@@ -91,7 +104,6 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
         }
     }
 }
-    
 
 .description:nth-child(1) {
     margin-top: 40px;
@@ -108,8 +120,7 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
     align-items: center;
     border: 2px solid $blanc;
     background-image: url('../images/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
     height: 500px;
     .title h4 {
         font-size: 2em;        
