@@ -95,5 +95,9 @@
         </div> <!-- Fin row -->
     </div>
 
-    <?php include_once("footer.php"); ?>
+    <?php include("footer.php"); ?>
+    </body>
+    <?php include("scriptCommun.php"); ?>
+    <!-- Script Pour la présentation -->
+    <script src="js/myScriptPresentation.js" type="text/javascript"></script>
 </html>

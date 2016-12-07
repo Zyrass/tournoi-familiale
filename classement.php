@@ -3,5 +3,10 @@
 
     <h1>Classement</h1>
 
+
+
     <?php include_once("footer.php"); ?>
+    </body>
+    <?php include_once("scriptCommun.php"); ?>
+    <?php include_once("scriptClassement.php"); ?>
 </html>
