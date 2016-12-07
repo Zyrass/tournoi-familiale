@@ -39,7 +39,7 @@
                 </ul>
                 <ul class="nav navbar ml-3 float-xs-left">
                     <form class="form-inline">
-                        <button type="button" id="disabledButton" class="form-control button-disabled"><span class="text-success"><strong>Open</strong></span> this description
+                        <button type="button" id="disabledButton" class="form-control button-disabled"><span class="text-success"><strong>Voir</strong></span> la description
                     </form>
                 </ul>
                 <ul class="nav navbar-nav float-xs-right mr-3">
@@ -80,7 +80,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="login.php" class="nav-link item-login">
+                        <a href="login.php" class="nav-link item-logout">
                             <i class="fa fa-sign-out" aria-hidden="true"></i> Déconnexion
                         </a>
                     </li>

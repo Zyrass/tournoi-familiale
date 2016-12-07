@@ -60,9 +60,13 @@
             </p>
             <hr />
             <blockquote class="blockquote">
-                <p>Développeur Back & Front-End <span class="text-danger">"<strong>Junior</strong>"</span></p>
+                <legend>Description rapide de l'auteur du site</legend>
+                <hr />
+                <p><span class="lead">Ils s'appel monsieur GUILLON Alain. Il a 32 ans avec 3 enfants à charge. Au jour d'aujourd'hui il est en reconversion professionnel suite à des soucis de santé.
+                De base, il est technicien de maintenance informatique micro et réseau et comme dit précédemment, il est en reconversion professionnel en tant que
+                Développeur Back & Front-End <span class="text-danger">"<strong>Junior</strong>"</span>. Ce site est pour lui une façon de présenter son savoir faire.</p>
                 <footer class="blockquote-footer">
-                    Alain GUILLON
+                    Alain
                 </footer>
             </blockquote>
             <hr />
