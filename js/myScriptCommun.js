@@ -75,7 +75,8 @@ $(document).ready(function(){
 
     // Classements
     $('header nav a.item-classements').mouseover(function() {
-        $('.slider .information p').hide('slow');
+        $('.slider .information p').hide('slow');++
+        36
         $('.slider .information h2').replaceWith("<h2 class='display-3'>Statistiques</h2>");
         $('.slider .information h3').replaceWith("<h3 class='h5'>Qui n'a jamais rêvé de se mesurer à son frère ou ça soeur sans avoir papa ou maman sur le dos ? Là, en plus de ça vous pourrez vous amusez à voir ou es ce que vous avez des lacunes et ainsi les combler en vous entraînant !</h3>");
     });
