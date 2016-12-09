@@ -30,7 +30,7 @@
                 <ul class="nav navbar ml-3 float-xs-left">
                     <form methode="get" class="form-inline">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Votre recherche ici" style="width:350px;">
+                            <input type="text" class="form-control" placeholder="Votre recherche ici" style="width:350px">
                             <span class="input-group-addon" id="basic-addon1">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </span>

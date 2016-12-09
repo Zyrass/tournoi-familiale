@@ -179,4 +179,27 @@ h1, h2, h3, h4, h5, h6, p:first-letter {
   #plaisir:hover .image img, #plaisir:hover .image img:hover, #statistique:hover .image img, #statistique:hover .image img:hover, #famille:hover .image img, #famille:hover .image img:hover {
     transition: filter .5s linear; }
 
+footer {
+  height: 400px;
+  margin-top: 20px;
+  padding: 25px;
+  background-image: url("../images/bg5.png");
+  background-repeat: repeat;
+  opacity: .5s; }
+  footer legend {
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; }
+  footer .sizing {
+    height: 200px;
+    background-image: url("../images/bg4.png");
+    border-right: 1px solid #000; }
+    footer .sizing h4 {
+      color: #000;
+      padding: 20px;
+      text-align: center; }
+    footer .sizing ul {
+      list-style: none;
+      text-align: center; }
+
 /*# sourceMappingURL=myStyle.css.map */

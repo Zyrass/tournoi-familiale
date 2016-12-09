@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+       
     // Activer ou désactiver l'affichage du menu rapide
     var ask = 0;
     $('#disabledButton').click(function() {
