@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*****************************************************************************
  ******************************************** Variables
  ****************************************************************************/
@@ -8,10 +9,21 @@
 /*****************************************************************************
  ******************************************** GLOBAL
  ****************************************************************************/
-body {
+/* Une autre vision du box-sizing. 
+ * Simplififier les calculs de dimensions
+ * ------------------------------------------------------------------------------------------------------------------
+ * Paul Irish (ingénieur chez Google) qui au début de l'année 2012 alors que l'utilisation
+ * d'Internet Explorer 6 et 7 se faisait de plus en plus rare, a suggéré l'emploi de ce "pas si nouveau"
+ * modèle de boîte pour tous les éléments de la page avec la règle suivante :
+ * ------------------------------------------------------------------------------------------------------------------ */
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
   font-family: 'Lato', sans-serif;
   background-image: url("../images/bg2.png");
   background-repeat: repeat; }
